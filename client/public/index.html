@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="dashboard">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="/">
+    <title>Bem vindo ao Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Chart.min.css">
+    <script src="js/lib/angular.min.js"></script>   
+    <script src="js/lib/angular-route.min.js"></script>
+    <script src="js/main.js"></script>   
+    <script src="js/controllers/dashboard-controller.js"></script>
+    <script src="js/directives/todas-diretivas.js"></script>   
+    <script src="js/lib/chart/Chart.min.js"></script>
+    <script src="js/lib/chart/angular-chart.min.js"></script>
+    <script src="js/lib/chart/tc-angular-chartjs.min.js"></script>
+    <script src="js/lib/lodash.min.js"></script>
+    <!--<script data-require="lodash.js@*" data-semver="3.1.0" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.1.0/lodash.min.js"></script>-->
+</head>
+<body>    
+    <div class="container">
+        <ng-view></ng-view>
+    </div>
+</body>
+</html>
