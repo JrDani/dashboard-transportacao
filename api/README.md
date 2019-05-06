@@ -10,7 +10,8 @@ Criado para alimentar um dashboard que relaciona veículos de transporte, carga,
 # Usar
 
   - Abra o arquivo src/main/resources/application.properties para mudar a senha e o usuário do banco de dados
-  - Só executar o Spring Boot. Programado para rodar na porta 8090
+  - Para executar no Spring Tool Suite: clique com botão direito no projeto > "Run as" > "Run Configurations", abrirá uma nova janela. Em "Profile" digite "dev" e aperte o botão "Run".
+  - App programado para rodar na porta 8090
   - Banco de dados e tabelas serão criadas automaticamente
 
 Veja também, o Client:
