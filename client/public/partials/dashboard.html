@@ -1,6 +1,43 @@
 <h1>Dashboard</h1>
 <div>
-    <canvas tc-chartjs-bar chart-data="dados" chart-options="options">
+    <canvas tc-chartjs-bar chart-data="totalPorMinerios_dados" chart-options="totalPorMinerios_options">
     </canvas>
 </div>  
+<div class="row mt-5 d-flex justify-content-center">
+    <div class="col-10 bg-white rounded shadow-sm">
+        <table class="table">
+            <thead>
+                <th>Minério</th>
+                <th>Preço por grama (R$)</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="m in minerios">
+                    <td>{{m.nome}}</td>
+                    <td>{{m.valor_grama}}</td>
+                </tr>
+            </tbody>
+        </table> 
+    </div>
+</div>
+<div class="row mt-5">
+    <div class="col">
+        <canvas tc-chartjs-doughnut chart-data="veiculosCirculacao_dados" chart-options="veiculosCirculacao_options">
+        </canvas> 
+    </div>
+    <!--
+    <div class="col-6">            
+        <div ng-repeat="v in relacaoVeiculoTiposVeiculos" class="media text-muted pt-3">
+            <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"></rect><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+            <div ng-repeat="" class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <strong class="text-gray-dark">{{v.nome}}</strong>
+                    <span>{{v.qtdVeiculo}} Veículos desta categoria</span>
+                </div>           
+            </div>
+        </div>
+    </div>
+    -->
+</div>
+
+
 <!--<grafico-barra></grafico-barra>-->

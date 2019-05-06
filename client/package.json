@@ -4,9 +4,11 @@
   "description": "",
   "main": "public/index.html",
   "scripts": {
-    "start": "http-server"
+    "start": "node server.js"
   },
   "author": "Daniel Jr",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
