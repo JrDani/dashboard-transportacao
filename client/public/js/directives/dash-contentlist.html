@@ -1,0 +1,12 @@
+<h2>{{titulo}}</h2>
+
+<table class="table">
+    <thead>
+        <th ng-repeat="col in colunas">{{col.text}}</th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="row in linhas">               
+            <td ng-repeat="col_row in row">{{col_row}}</td>
+        </tr>
+    </tbody>
+</table>

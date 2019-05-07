@@ -40,18 +40,7 @@ angular.module('dashboard').controller('DashboardController', function($scope, $
         //console.log(contadorVeiculo);
         $scope.veiculosCirculacao_dados = deDonautDados(tiposDeVeiculos, contadorVeiculo);
         $scope.veiculosCirculacao_options = configuracao('Veículos em circulação');
-        
-        var columns = Object.getOwnPropertyNames(tiposDeVeiculos);
-        var rows = contadorVeiculo;
-
-        $scope.relacaoVeiculoTiposVeiculos = _.map(columns, function(tipoVeiculo, index){            
-            return  {
-                id: index,
-                nome: tipoVeiculo,
-                qtdVeiculo: rows[index]
-            }
-        });       
-          
+                  
     }).catch(function(erro){
         console.log(erro);
     });
